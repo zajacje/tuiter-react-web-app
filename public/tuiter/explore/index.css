@@ -1,29 +1,3 @@
-body {
-  background-color: black;
-  color: white;
-  margin-left: 16px;
-  margin-right: 16px;
-  font-family: sans-serif;
-}
-
-.wd-border {
-  border-color: rgb(47, 51, 54);
-  border-width: 2px;
-  border-style: solid;
-}
-
-.wd-float-left {
-  float: left;
-}
-
-.wd-float-right {
-  float: right;
-}
-
-.wd-float-done {
-  clear: both;
-}
-
 .wd-explore-search-col {
   width: 80%;
 }
@@ -35,13 +9,10 @@ body {
   border-width: 0px;
   margin-top: 8px;
   margin-left: 20px;
+  color: rgb(110, 118, 125);
   background-color: rgb(47, 51, 54);
   padding-left: 50px;
   font-size: medium;
-}
-
-.wd-relative-pos {
-  position: relative;
 }
 
 .wd-explore-search-icon {
@@ -49,10 +20,6 @@ body {
   position: absolute;
   top: 12px;
   left: 40px;
-}
-
-.wd-color-light-grey {
-  color: rgb(110, 118, 125);
 }
 
 .wd-explore-settings-col {
@@ -92,12 +59,9 @@ body {
 }
 
 .wd-spacer {
+  border-top: 2px rgb(47, 51, 54) solid;
   height: 10px;
   background-color: rgb(33, 36, 38);
-}
-
-.wd-border-top-none {
-  border-top: none;
 }
 
 .wd-suggested-post {
