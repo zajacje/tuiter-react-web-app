@@ -1,27 +1,18 @@
 .wd-explore-search-bar {
   border-radius: 50px;
-  padding-left: 50px;
 }
 
-.wd-sidebar-icon {
-  padding-right: 0px;
+.wd-explore-search-icon {
+  top: 6px;
+  left: 30px;
 }
 
 .wd-sidebar-more {
-  position: relative;
   right: 12px;
 }
 
 .wd-main-caption {
-  position: absolute;
-  bottom: 0px;
   left: 8px;
-}
-
-.wd-explore-search-icon {
-  position: absolute;
-  top: 6px;
-  left: 30px;
 }
 
 .wd-follow-img {
