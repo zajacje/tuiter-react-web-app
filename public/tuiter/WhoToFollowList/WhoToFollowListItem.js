@@ -8,7 +8,7 @@ const WhoToFollowListItem = (who) => {
           class="rounded-circle wd-follow-img"
         />
       </div>
-      <div class="col-6 col-xl-6 pe-1 ps-1 ps-xl-2 align-self-center">
+      <div class="col-6 col-xl-7 pe-1 ps-1 ps-xl-2 align-self-center">
         <span class="fw-bold">
         ${who.userName}
         <i class="fa-solid fa-circle-check"></i>
