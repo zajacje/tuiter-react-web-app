@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: white;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-family: sans-serif;
+}
+
+.wd-border {
+  border-color: rgb(47, 51, 54);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.wd-border-top-none {
+  border-top: none;
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-float-done {
+  clear: both;
+}
+
+.wd-relative-pos {
+  position: relative;
+}
