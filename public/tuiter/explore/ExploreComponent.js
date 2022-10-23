@@ -39,7 +39,7 @@ const ExploreComponent = () => {
   </ul>
 
   <div class="position-relative">
-    <img src="../images/starship.webp" width="100%" />
+    <img src="/images/starship.webp" width="100%" />
     <h3
       class="wd-main-caption position-absolute bottom-0 fw-bold"
     >

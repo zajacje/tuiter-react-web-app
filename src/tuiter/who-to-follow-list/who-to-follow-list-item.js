@@ -1,5 +1,3 @@
-import React from "react";
-
 const WhoToFollowListItem = ({
   who = { userName: "NASA", handle: "NASA", avatarIcon: "nasa.png" },
 }) => {
@@ -10,7 +8,7 @@ const WhoToFollowListItem = ({
           <img
             className="rounded-circle"
             height={48}
-            src={`../images/nasa`}
+            src={`/images/${who.avatarIcon}`}
             alt={who.avatarIcon}
           />
         </div>
