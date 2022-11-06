@@ -9,7 +9,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
       <a
         className={`list-group-item
                     ${active === "home" ? "active" : ""}`}
-        href="home.html"
+        href="home/"
       >
         Home
       </a>
