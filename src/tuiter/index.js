@@ -2,11 +2,14 @@ import React from "react";
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
+import tuitsReducer from "./tuits/tuits-reducer";
 import whoReducer from "./reducers/who-reducer";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
-const store = configureStore({ reducer: { who: whoReducer } });
+const store = configureStore({
+  reducer: { who: whoReducer, tuits: tuitsReducer },
+});
 
 function Tuiter() {
   return (
