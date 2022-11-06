@@ -12,56 +12,56 @@ const NavigationSidebar = () => {
       <a
         className={`list-group-item
                     ${active === "home" || !active ? "active" : ""}`}
-        href="home/"
+        href="/tuiter/home"
       >
         Home
       </a>
       <a
         className={`list-group-item
                     ${active === "explore" ? "active" : ""}`}
-        href="explore/"
+        href="/tuiter/explore"
       >
         Explore
       </a>
       <a
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
-        href="notifications/"
+        href="/tuiter/notifications"
       >
         Notifications
       </a>
       <a
         className={`list-group-item
                     ${active === "messages" ? "active" : ""}`}
-        href="messages/"
+        href="/tuiter/messages"
       >
         Messages
       </a>
       <a
         className={`list-group-item
                     ${active === "bookmarks" ? "active" : ""}`}
-        href="bookmarks/"
+        href="/tuiter/bookmarks"
       >
         Bookmarks
       </a>
       <a
         className={`list-group-item
                     ${active === "lists" ? "active" : ""}`}
-        href="lists/"
+        href="/tuiter/lists"
       >
         Lists
       </a>
       <a
         className={`list-group-item
                     ${active === "profile" ? "active" : ""}`}
-        href="profile.html"
+        href="/tuiter/profile"
       >
         Profile
       </a>
       <a
         className={`list-group-item
                     ${active === "more" ? "active" : ""}`}
-        href="more/"
+        href="/tuiter/more"
       >
         More
       </a>
