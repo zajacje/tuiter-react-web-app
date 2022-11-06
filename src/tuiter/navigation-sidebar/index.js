@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocation } from "react-router";
 
-const NavigationSidebar = ({ active = "explore" }) => {
+const NavigationSidebar = () => {
+  const { pathname } = useLocation();
+  const active = pathname.split("/")[2];
   return (
     <div className="list-group">
       <a className="list-group-item" href="/tuiter">
@@ -8,7 +11,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
       </a>
       <a
         className={`list-group-item
-                    ${active === "home" ? "active" : ""}`}
+                    ${active === "home" || !active ? "active" : ""}`}
         href="home/"
       >
         Home
