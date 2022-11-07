@@ -6,8 +6,8 @@ const TuitsList = () => {
   const postsArray = useSelector((state) => state.tuits);
   return (
     <ul className="list-group">
-      {postsArray.map((post) => (
-        <TuitItem key={post._id} post={post} />
+      {postsArray.map((tuit) => (
+        <TuitItem key={tuit._id} tuit={tuit} />
       ))}
     </ul>
   );
