@@ -13,63 +13,80 @@ const NavigationSidebar = () => {
         to="/tuiter"
         end
       >
-        Tuiter
+        <span className="d-none d-xl-inline">Tuiter</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "home" ? "active" : ""}`}
         to="/tuiter/home"
       >
-        Home
+        <i class="bi bi-house-door-fill pe-2"></i>
+        <span className="d-none d-xl-inline">Home</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "explore" ? "active" : ""}`}
         to="/tuiter/explore"
       >
-        Explore
+        <i class="bi bi-hash pe-2"></i>
+        <span className="d-none d-xl-inline">Explore</span>
+      </NavLink>
+      <NavLink
+        className={`list-group-item
+                    ${active === "labs" ? "active" : ""}`}
+        to="/"
+        end
+      >
+        <i class="bi bi-asterisk pe-2"></i>
+        <span className="d-none d-xl-inline">Labs</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
         to="/tuiter/notifications"
       >
-        Notifications
+        <i class="bi bi-bell pe-2"></i>
+        <span className="d-none d-xl-inline">Notifications</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "messages" ? "active" : ""}`}
         to="/tuiter/messages"
       >
-        Messages
+        <i class="bi bi-envelope pe-2"></i>
+        <span className="d-none d-xl-inline">Messages</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "bookmarks" ? "active" : ""}`}
         to="/tuiter/bookmarks"
       >
-        Bookmarks
+        <i class="bi bi-bookmark pe-2"></i>
+        <span className="d-none d-xl-inline">Bookmarks</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "lists" ? "active" : ""}`}
         to="/tuiter/lists"
       >
-        Lists
+        <i class="bi bi-card-text pe-2"></i>
+        <span className="d-none d-xl-inline">Lists</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "profile" ? "active" : ""}`}
         to="/tuiter/profile"
       >
-        Profile
+        <i class="bi bi-person pe-2"></i>
+        <span className="d-none d-xl-inline">Profile</span>
       </NavLink>
       <NavLink
         className={`list-group-item
                     ${active === "more" ? "active" : ""}`}
         to="/tuiter/more"
       >
-        More
+        <i class="bi bi-three-dots pe-2"></i>
+        <span className="d-none d-xl-inline">More</span>
       </NavLink>
     </div>
   );
