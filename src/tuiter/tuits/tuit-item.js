@@ -1,4 +1,5 @@
 import React from "react";
+
 const TuitItem = ({
   post = {
     _id: 234,
@@ -19,7 +20,7 @@ const TuitItem = ({
   return (
     <li className="list-group-item">
       <div className="row">
-        <div className="col-2">
+        <div className="col-auto">
           <img
             className="rounded-circle"
             height={48}
@@ -27,9 +28,36 @@ const TuitItem = ({
             alt={post.image}
           />
         </div>
-        <div className="col-10">
-          <div className="fw-bold">{post.userName}</div>
-          <div>@{post.handle}</div>
+        <div className="col">
+          <div>
+            <span className="fw-bolder">{post.userName}</span>
+            <i class="bi bi-patch-check-fill text-primary px-2"></i>
+            {post.handle}
+            <i class="bi bi-dot"></i>
+            {post.time}
+          </div>
+          <div>{post.tuit}</div>
+          <div className="row">
+            <div className="col">
+              <i class="bi bi-chat pe-2"></i>
+              {post.replies}
+            </div>
+            <div className="col">
+              <i class="bi bi-arrow-repeat pe-2"></i>
+              {post.retuits}
+            </div>
+            <div className="col">
+              {post.liked ? (
+                <i class="bi bi-heart-fill pe-2 text-danger"></i>
+              ) : (
+                <i class="bi bi-heart pe-2"></i>
+              )}
+              {post.likes}
+            </div>
+            <div className="col">
+              <i class="bi bi-share"></i>
+            </div>
+          </div>
         </div>
       </div>
     </li>

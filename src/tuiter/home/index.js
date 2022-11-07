@@ -1,10 +1,10 @@
 import React from "react";
-import PostSummaryList from "../post-summary-list";
+import TuitList from "../tuits";
 const HomeComponent = () => {
   return (
     <>
       <h1>Home</h1>
-      <PostSummaryList />
+      <TuitList />
     </>
   );
 };
