@@ -31,31 +31,31 @@ const TuitItem = ({
         <div className="col">
           <div>
             <span className="fw-bolder">{post.userName}</span>
-            <i class="bi bi-patch-check-fill text-primary px-2"></i>
+            <i className="bi bi-patch-check-fill text-primary px-2"></i>
             {post.handle}
-            <i class="bi bi-dot"></i>
+            <i className="bi bi-dot"></i>
             {post.time}
           </div>
           <div>{post.tuit}</div>
           <div className="row">
             <div className="col">
-              <i class="bi bi-chat pe-2"></i>
+              <i className="bi bi-chat pe-2"></i>
               {post.replies}
             </div>
             <div className="col">
-              <i class="bi bi-arrow-repeat pe-2"></i>
+              <i className="bi bi-arrow-repeat pe-2"></i>
               {post.retuits}
             </div>
             <div className="col">
               {post.liked ? (
-                <i class="bi bi-heart-fill pe-2 text-danger"></i>
+                <i className="bi bi-heart-fill pe-2 text-danger"></i>
               ) : (
-                <i class="bi bi-heart pe-2"></i>
+                <i className="bi bi-heart pe-2"></i>
               )}
               {post.likes}
             </div>
             <div className="col">
-              <i class="bi bi-share"></i>
+              <i className="bi bi-share"></i>
             </div>
           </div>
         </div>

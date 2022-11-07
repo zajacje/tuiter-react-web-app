@@ -1,70 +1,76 @@
 import React from "react";
 import { useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const active = pathname.split("/")[2];
   return (
     <div className="list-group">
-      <a className="list-group-item" href="/tuiter">
-        Tuiter
-      </a>
-      <a
+      <NavLink
         className={`list-group-item
-                    ${active === "home" || !active ? "active" : ""}`}
-        href="/tuiter/home"
+                    ${!active ? "active" : ""}`}
+        to="/tuiter"
+        end
+      >
+        Tuiter
+      </NavLink>
+      <NavLink
+        className={`list-group-item
+                    ${active === "home" ? "active" : ""}`}
+        to="/tuiter/home"
       >
         Home
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "explore" ? "active" : ""}`}
-        href="/tuiter/explore"
+        to="/tuiter/explore"
       >
         Explore
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
-        href="/tuiter/notifications"
+        to="/tuiter/notifications"
       >
         Notifications
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "messages" ? "active" : ""}`}
-        href="/tuiter/messages"
+        to="/tuiter/messages"
       >
         Messages
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "bookmarks" ? "active" : ""}`}
-        href="/tuiter/bookmarks"
+        to="/tuiter/bookmarks"
       >
         Bookmarks
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "lists" ? "active" : ""}`}
-        href="/tuiter/lists"
+        to="/tuiter/lists"
       >
         Lists
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "profile" ? "active" : ""}`}
-        href="/tuiter/profile"
+        to="/tuiter/profile"
       >
         Profile
-      </a>
-      <a
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "more" ? "active" : ""}`}
-        href="/tuiter/more"
+        to="/tuiter/more"
       >
         More
-      </a>
+      </NavLink>
     </div>
   );
 };
