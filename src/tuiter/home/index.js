@@ -1,9 +1,12 @@
 import React from "react";
 import TuitList from "../tuits";
+import WhatsHappening from "./whats-happening";
+
 const HomeComponent = () => {
   return (
     <>
-      <h1>Home</h1>
+      <h4>Home</h4>
+      <WhatsHappening />
       <TuitList />
     </>
   );
