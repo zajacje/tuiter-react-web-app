@@ -1,67 +1,93 @@
 import React from "react";
+import { useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
 
-const NavigationSidebar = ({ active = "explore" }) => {
+const NavigationSidebar = () => {
+  const { pathname } = useLocation();
+  const active = pathname.split("/")[2];
   return (
     <div className="list-group">
-      <a className="list-group-item" href="/tuiter">
-        Tuiter
-      </a>
-      <a
+      <NavLink
+        className={`list-group-item
+                    ${!active ? "active" : ""}`}
+        to="/tuiter"
+        end
+      >
+        <span className="d-none d-xl-inline">Tuiter</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "home" ? "active" : ""}`}
-        href="home.html"
+        to="/tuiter/home"
       >
-        Home
-      </a>
-      <a
+        <i class="bi bi-house-door-fill pe-2"></i>
+        <span className="d-none d-xl-inline">Home</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "explore" ? "active" : ""}`}
-        href="explore/"
+        to="/tuiter/explore"
       >
-        Explore
-      </a>
-      <a
+        <i class="bi bi-hash pe-2"></i>
+        <span className="d-none d-xl-inline">Explore</span>
+      </NavLink>
+      <NavLink
+        className={`list-group-item
+                    ${active === "labs" ? "active" : ""}`}
+        to="/"
+        end
+      >
+        <i class="bi bi-asterisk pe-2"></i>
+        <span className="d-none d-xl-inline">Labs</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
-        href="notifications/"
+        to="/tuiter/notifications"
       >
-        Notifications
-      </a>
-      <a
+        <i class="bi bi-bell pe-2"></i>
+        <span className="d-none d-xl-inline">Notifications</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "messages" ? "active" : ""}`}
-        href="messages/"
+        to="/tuiter/messages"
       >
-        Messages
-      </a>
-      <a
+        <i class="bi bi-envelope pe-2"></i>
+        <span className="d-none d-xl-inline">Messages</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "bookmarks" ? "active" : ""}`}
-        href="bookmarks/"
+        to="/tuiter/bookmarks"
       >
-        Bookmarks
-      </a>
-      <a
+        <i class="bi bi-bookmark pe-2"></i>
+        <span className="d-none d-xl-inline">Bookmarks</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "lists" ? "active" : ""}`}
-        href="lists/"
+        to="/tuiter/lists"
       >
-        Lists
-      </a>
-      <a
+        <i class="bi bi-card-text pe-2"></i>
+        <span className="d-none d-xl-inline">Lists</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "profile" ? "active" : ""}`}
-        href="profile.html"
+        to="/tuiter/profile"
       >
-        Profile
-      </a>
-      <a
+        <i class="bi bi-person pe-2"></i>
+        <span className="d-none d-xl-inline">Profile</span>
+      </NavLink>
+      <NavLink
         className={`list-group-item
                     ${active === "more" ? "active" : ""}`}
-        href="more/"
+        to="/tuiter/more"
       >
-        More
-      </a>
+        <i class="bi bi-three-dots pe-2"></i>
+        <span className="d-none d-xl-inline">More</span>
+      </NavLink>
     </div>
   );
 };
