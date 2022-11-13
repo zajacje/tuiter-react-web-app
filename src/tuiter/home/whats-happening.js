@@ -3,7 +3,7 @@ import { createTuitThunk } from "../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 
 const currentUser = {
-  userName: "NASA",
+  username: "NASA",
   handle: "@nasa",
   image: "nasa.png",
 };
@@ -15,6 +15,7 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening,
       ...currentUser,
+      topic: "Space",
       time: "Now",
     };
     dispatch(createTuitThunk(newTuit));
