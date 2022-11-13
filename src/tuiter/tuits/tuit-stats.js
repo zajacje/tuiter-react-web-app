@@ -1,6 +1,5 @@
 import { useDispatch } from "react-redux";
-import { updateTuitThunk }
-  from "../../services/tuits-thunks";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
@@ -17,23 +16,62 @@ const TuitStats = ({ tuit }) => {
       <div className="col">
         {tuit.liked ? (
           <i
-            onClick={() => dispatch(updateTuitThunk({
-              ...tuit,
-              likes: tuit.likes - 1,
-              liked: false
-            }))}
+            onClick={() =>
+              dispatch(
+                updateTuitThunk({
+                  ...tuit,
+                  likes: tuit.likes - 1,
+                  liked: false,
+                })
+              )
+            }
             className="bi bi-heart-fill pe-2 text-danger"
           ></i>
         ) : (
-          <i 
-          onClick={() => dispatch(updateTuitThunk({
-            ...tuit,
-            likes: tuit.likes + 1,
-            liked: true
-          }))}
-          className="bi bi-heart pe-2"></i>
+          <i
+            onClick={() =>
+              dispatch(
+                updateTuitThunk({
+                  ...tuit,
+                  likes: tuit.likes + 1,
+                  liked: true,
+                })
+              )
+            }
+            className="bi bi-heart pe-2"
+          ></i>
         )}
         {tuit.likes}
+      </div>
+      <div className="col">
+        {tuit.disliked ? (
+          <i
+            onClick={() =>
+              dispatch(
+                updateTuitThunk({
+                  ...tuit,
+                  dislikes: tuit.dislikes - 1,
+                  disliked: false,
+                })
+              )
+            }
+            className="bi bi-hand-thumbs-down-fill pe-2"
+          ></i>
+        ) : (
+          <i
+            onClick={() =>
+              dispatch(
+                updateTuitThunk({
+                  ...tuit,
+                  dislikes: tuit.dislikes + 1,
+                  disliked: true,
+                })
+              )
+            }
+            className="bi bi-hand-thumbs-down pe-2"
+          ></i>
+        )}
+        {tuit.dislikes}
       </div>
       <div className="col">
         <i className="bi bi-share"></i>
