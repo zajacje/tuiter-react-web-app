@@ -20,7 +20,7 @@ const NavigationSidebar = () => {
                     ${active === "home" ? "active" : ""}`}
         to="/tuiter/home"
       >
-        <i class="bi bi-house-door-fill pe-2"></i>
+        <i className="bi bi-house-door-fill pe-2"></i>
         <span className="d-none d-xl-inline">Home</span>
       </NavLink>
       <NavLink
@@ -28,7 +28,7 @@ const NavigationSidebar = () => {
                     ${active === "explore" ? "active" : ""}`}
         to="/tuiter/explore"
       >
-        <i class="bi bi-hash pe-2"></i>
+        <i className="bi bi-hash pe-2"></i>
         <span className="d-none d-xl-inline">Explore</span>
       </NavLink>
       <NavLink
@@ -37,7 +37,7 @@ const NavigationSidebar = () => {
         to="/"
         end
       >
-        <i class="bi bi-asterisk pe-2"></i>
+        <i className="bi bi-asterisk pe-2"></i>
         <span className="d-none d-xl-inline">Labs</span>
       </NavLink>
       <NavLink
@@ -45,7 +45,7 @@ const NavigationSidebar = () => {
                     ${active === "notifications" ? "active" : ""}`}
         to="/tuiter/notifications"
       >
-        <i class="bi bi-bell pe-2"></i>
+        <i className="bi bi-bell pe-2"></i>
         <span className="d-none d-xl-inline">Notifications</span>
       </NavLink>
       <NavLink
@@ -53,7 +53,7 @@ const NavigationSidebar = () => {
                     ${active === "messages" ? "active" : ""}`}
         to="/tuiter/messages"
       >
-        <i class="bi bi-envelope pe-2"></i>
+        <i className="bi bi-envelope pe-2"></i>
         <span className="d-none d-xl-inline">Messages</span>
       </NavLink>
       <NavLink
@@ -61,7 +61,7 @@ const NavigationSidebar = () => {
                     ${active === "bookmarks" ? "active" : ""}`}
         to="/tuiter/bookmarks"
       >
-        <i class="bi bi-bookmark pe-2"></i>
+        <i className="bi bi-bookmark pe-2"></i>
         <span className="d-none d-xl-inline">Bookmarks</span>
       </NavLink>
       <NavLink
@@ -69,7 +69,7 @@ const NavigationSidebar = () => {
                     ${active === "lists" ? "active" : ""}`}
         to="/tuiter/lists"
       >
-        <i class="bi bi-card-text pe-2"></i>
+        <i className="bi bi-card-text pe-2"></i>
         <span className="d-none d-xl-inline">Lists</span>
       </NavLink>
       <NavLink
@@ -77,7 +77,7 @@ const NavigationSidebar = () => {
                     ${active === "profile" ? "active" : ""}`}
         to="/tuiter/profile"
       >
-        <i class="bi bi-person pe-2"></i>
+        <i className="bi bi-person pe-2"></i>
         <span className="d-none d-xl-inline">Profile</span>
       </NavLink>
       <NavLink
@@ -85,7 +85,7 @@ const NavigationSidebar = () => {
                     ${active === "more" ? "active" : ""}`}
         to="/tuiter/more"
       >
-        <i class="bi bi-three-dots pe-2"></i>
+        <i className="bi bi-three-dots pe-2"></i>
         <span className="d-none d-xl-inline">More</span>
       </NavLink>
     </div>
